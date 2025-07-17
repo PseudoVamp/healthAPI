@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>testing page</p>
-</body>
-</html>
+<!-- home.ejs -->
+ 
+<%- include('partials/header', { title: 'Home' }) %>
+
+<%- include('partials/nav') %>
+
+<main>
+    <h1 class="text-center" class="">Welcome to HealthAPI</h1>
+    <p class="text-center bottom-space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+    <h1 class="text-center">Patient Management System</h1>
+    <p class="text-center">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris viverra veniam sit amet lacus cursus de turpis egestas.</p>
+    <p class="text-center bottom-space">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</p>
+
+    <h1 class="text-center">Electronic Health Records</h1>
+    <p class="text-center bottom-space">Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+
+    <h1 class="text-center">Comprehensive Healthcare Solutions</h1>
+    <p class="text-center">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+    <p class="text-center">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus vivamus elementum semper nisi.</p>
+    <p class="text-center">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui etiam rhoncus maecenas tempus, tellus eget condimentum rhoncus.</p>
+    <p class="text-center bottom-space">Sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>
+</main>
+
+<%- include('partials/footer') %>

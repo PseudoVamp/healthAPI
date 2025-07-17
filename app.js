@@ -1,3 +1,5 @@
+// app.js
+
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -17,14 +19,15 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 // Home page route
 app.get("/", (req, res) => {
-  res.render("home.ejs");
+    res.render("home", { pageCSS: "home.css" });
 });
 
-// Routes for different sections of the EMR system
+// Patients route
 app.get("/patients", (req, res) => {
   res.render("patients.ejs");
 });
 
+// Records route
 app.get("/records", (req, res) => {
   res.render("records.ejs");
 });

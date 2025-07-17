@@ -1,0 +1,28 @@
+{
+  "name": "healthapi",
+  "version": "1.0.0",
+  "description": "HealthAPI - FHIR and HL7 compliant EMR system built with Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "emr",
+    "fhir",
+    "hl7",
+    "healthcare",
+    "medical",
+    "records"
+  ],
+  "author": "Jason Campbell",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

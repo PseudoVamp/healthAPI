@@ -1,14 +1,46 @@
 <!-- nav.ejs partial -->
- 
+
+<!-- Css files -->
+<link rel="stylesheet" href="/css/nav.css">
+
 <nav>
-    <div class="nav-container">
-        <div class="nav-brand">
-            <a href="/">HealthAPI</a>
-        </div>
-        <div class="nav-links">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/patients" class="nav-link">Patients</a>
-            <a href="/records" class="nav-link">Records</a>
-        </div>
-    </div>
+   <div class="nav-container">
+       <div class="nav-brand">
+           <a href="/">HealthAPI</a>
+       </div>
+       
+       <!-- Hamburger Menu Button (hidden on desktop) -->
+       <button class="hamburger" aria-label="Toggle menu">
+           <span class="hamburger-line"></span>
+           <span class="hamburger-line"></span>
+           <span class="hamburger-line"></span>
+       </button>
+       
+       <!-- Desktop Navigation -->
+       <div class="nav-links">
+           <a href="/" class="nav-link">Home</a>
+           <a href="/patients" class="nav-link">Patients</a>
+           <a href="/records" class="nav-link">Records</a>
+       </div>
+       <div class="nav-auth">
+           <a href="/login" class="nav-link">Login</a>
+           <a href="/register" class="nav-link">Register</a>
+       </div>
+       
+       <!-- Mobile Menu (hidden by default) -->
+       <div class="mobile-menu">
+           <div class="mobile-nav-links">
+               <a href="/" class="mobile-nav-link">Home</a>
+               <a href="/patients" class="mobile-nav-link">Patients</a>
+               <a href="/records" class="mobile-nav-link">Records</a>
+           </div>
+           <div class="mobile-nav-auth">
+               <a href="/login" class="mobile-nav-link">Login</a>
+               <a href="/register" class="mobile-nav-link">Register</a>
+           </div>
+       </div>
+   </div>
 </nav>
+
+<!-- JavaScript Files -->
+<script src="/js/nav.js"></script>

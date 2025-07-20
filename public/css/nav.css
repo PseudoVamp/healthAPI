@@ -1,0 +1,128 @@
+/* nav.css */
+
+nav {
+   background-color: var(--charcoal);
+   padding: 1rem;
+}
+
+.nav-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 100px;
+}
+
+.nav-brand a {
+   color: var(--white);
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.nav-links {
+   display: flex;
+   gap: 2rem;
+}
+
+.nav-auth {
+   display: flex;
+   gap: 1rem;
+}
+
+.nav-link {
+   color: var(--white);
+   padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+   color: var(--white);
+   background-color: var(--dark-plum);
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+   display: none;
+   flex-direction: column;
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0.5rem;
+   gap: 4px;
+}
+
+.hamburger-line {
+   width: 25px;
+   height: 3px;
+   background-color: var(--white);
+   transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   background-color: var(--charcoal);
+   border-top: 1px solid var(--dark-plum);
+   flex-direction: column;
+   padding: 1rem 0;
+}
+
+.mobile-nav-links,
+.mobile-nav-auth {
+   display: flex;
+   flex-direction: column;
+   padding: 0 2rem;
+}
+
+.mobile-nav-auth {
+   border-top: 1px solid var(--dark-plum);
+   margin-top: 1rem;
+   padding-top: 1rem;
+}
+
+.mobile-nav-link {
+   color: var(--white);
+   padding: 0.75rem 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav-link:hover {
+   background-color: var(--dark-plum);
+   padding-left: 1rem;
+   transition: all 0.3s ease;
+}
+
+/* Mobile Menu Open State */
+.nav-container.nav-open .mobile-menu {
+   display: flex;
+}
+
+.nav-container.nav-open .hamburger-line:nth-child(1) {
+   transform: rotate(45deg) translate(6px, 6px);
+}
+
+.nav-container.nav-open .hamburger-line:nth-child(2) {
+   opacity: 0;
+}
+
+.nav-container.nav-open .hamburger-line:nth-child(3) {
+   transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive Breakpoints*/
+@media (max-width: 768px) {
+   .nav-container {
+       position: relative;
+   }
+   
+   .hamburger {
+       display: flex;
+   }
+   
+   .nav-links,
+   .nav-auth {
+       display: none;
+   }
+}

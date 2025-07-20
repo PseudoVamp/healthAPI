@@ -1,0 +1,26 @@
+/* footer.css */
+
+footer {
+   background-color: var(--dark-plum);
+   color: var(--white);
+   padding: 10px 0;
+   margin-top: auto;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+
+.footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.footer-bottom {
+   text-align: center;
+   font-size: 0.9rem;
+}
+
+.footer-bottom p {
+   margin: 0;
+}

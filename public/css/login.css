@@ -1,1 +1,101 @@
 /* login.css */
+
+/* Login Container */
+.login-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   padding: 2rem;
+}
+
+/* Login Card */
+.login-card {
+   background-color: var(--charcoal);
+   padding: 3rem;
+   border-radius: 8px;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+   width: 100%;
+   max-width: 600px;
+}
+
+/* Login Form */
+.login-form {
+   width: 100%;
+}
+
+/* Form Groups */
+.form-group {
+   margin-bottom: 1.5rem;
+}
+
+/* Form Labels */
+.form-label {
+   display: block;
+   margin-bottom: 0.5rem;
+   color: var(--white);
+   font-weight: 500;
+}
+
+/* Form Inputs */
+.form-input {
+   width: 100%;
+   padding: 0.75rem;
+   border: 2px solid var(--blue-gray);
+   border-radius: 4px;
+   background-color: var(--dark-plum);
+   color: var(--white);
+   font-size: 1rem;
+   transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+   outline: none;
+   border-color: var(--white);
+}
+
+.form-input::placeholder {
+   color: var(--blue-gray);
+}
+
+/* Login Button */
+.login-btn {
+   width: 100%;
+   padding: 0.75rem;
+   background-color: var(--blue-gray);
+   color: var(--white);
+   border: none;
+   border-radius: 4px;
+   font-size: 1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+   background-color: var(--white);
+   color: var(--dark-navy);
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+   color: var(--blue-gray);
+   font-size: 0.9rem;
+   text-decoration: underline;
+   transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+   color: var(--white);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+   .login-container {
+       padding: 1rem;
+   }
+   
+   .login-card {
+       padding: 2rem;
+   }
+}
